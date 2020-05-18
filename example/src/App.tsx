@@ -36,9 +36,11 @@ const styles = StyleSheet.create({
     shadowColor: '#000',
   },
   activeTextStyle: {
+    fontSize: 12,
     color: '#000',
   },
   inactiveTextStyle: {
+    fontSize: 10,
     color: '#757de8',
   },
 });
