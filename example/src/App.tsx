@@ -12,6 +12,8 @@ export default function App() {
         onValueChange={setValue}
         leftText="Off"
         rightText="On"
+        style={styles.toggle}
+        handleStyle={styles.handle}
         activeTextStyle={styles.activeTextStyle}
         inactiveTextStyle={styles.inactiveTextStyle}
       />
@@ -26,10 +28,17 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'space-evenly',
   },
+  toggle: {
+    backgroundColor: '#002984',
+  },
+  handle: {
+    backgroundColor: '#757de8',
+    shadowColor: '#000',
+  },
   activeTextStyle: {
     color: '#000',
   },
   inactiveTextStyle: {
-    color: '#AAA',
+    color: '#757de8',
   },
 });

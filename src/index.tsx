@@ -18,6 +18,7 @@ interface Props {
   value: boolean;
   onValueChange(value: boolean): unknown;
   style?: StyleProp<ViewStyle>;
+  handleStyle?: StyleProp<ViewStyle>;
   leftText: string;
   rightText: string;
   activeTextStyle?: StyleProp<TextStyle>;
@@ -75,6 +76,7 @@ class SwagToggle extends React.Component<Props> {
   render() {
     const {
       style,
+      handleStyle,
       leftText,
       rightText,
       activeTextStyle,
@@ -106,7 +108,9 @@ class SwagToggle extends React.Component<Props> {
       >
         <Text style={[backgroundTextStyle, styles.left]}>{leftText}</Text>
         <Text style={[backgroundTextStyle, styles.right]}>{rightText}</Text>
-        <Animated.View style={[styles.circle, styles.handle, animatedStyle]}>
+        <Animated.View
+          style={[styles.circle, styles.handle, handleStyle, animatedStyle]}
+        >
           <View
             style={[
               StyleSheet.absoluteFill,
