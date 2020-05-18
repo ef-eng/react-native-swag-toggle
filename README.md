@@ -5,17 +5,29 @@ Swag Toggle
 ## Installation
 
 ```sh
-npm install react-native-swag-toggle
+yarn add react-native-swag-toggle
 ```
 
 ## Usage
 
 ```js
-import SwagToggle from "react-native-swag-toggle";
+import SwagToggle from 'react-native-swag-toggle';
 
-// ...
-
-const result = await SwagToggle.multiply(3, 7);
+const Component = () => {
+  const [value, setValue] = React.useState(false);
+  return (
+    <SwagToggle
+      value={value}
+      onValueChange={setValue}
+      leftText="Off"
+      rightText="On"
+      style={styles.toggle}
+      handleStyle={styles.handle}
+      activeTextStyle={styles.activeTextStyle}
+      inactiveTextStyle={styles.inactiveTextStyle}
+    />
+  );
+};
 ```
 
 ## Contributing
