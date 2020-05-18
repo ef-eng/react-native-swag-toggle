@@ -2,6 +2,8 @@
 
 Swag Toggle
 
+![Screnshot](.github/screenshot.gif)
+
 ## Installation
 
 ```sh
@@ -19,8 +21,8 @@ const Component = () => {
     <SwagToggle
       value={value}
       onValueChange={setValue}
-      leftText="Off"
-      rightText="On"
+      leftText="L"
+      rightText="R"
       style={styles.toggle}
       handleStyle={styles.handle}
       activeTextStyle={styles.activeTextStyle}
