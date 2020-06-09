@@ -140,6 +140,7 @@ const styles = StyleSheet.create({
     width: CONTAINER_HEIGHT + TRACK_LENGTH,
     borderRadius: CONTAINER_HEIGHT / 2,
     marginHorizontal: 8,
+    cursor: 'pointer',
   },
   circle: {
     height: HANDLE_SIZE,
@@ -165,6 +166,7 @@ const styles = StyleSheet.create({
   text: {
     textAlign: 'center',
     lineHeight: HANDLE_SIZE,
+    userSelect: 'none',
   },
   backgroundText: {
     top: HANDLE_PADDING,
