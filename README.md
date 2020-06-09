@@ -1,6 +1,6 @@
 # react-native-swag-toggle
 
-Swag Toggle
+A Swag Toggle for React Native and Expo Web
 
 ![Screnshot](.github/screenshot.gif)
 
@@ -25,8 +25,8 @@ const Component = () => {
       rightText="R"
       style={styles.toggle}
       handleStyle={styles.handle}
-      activeTextStyle={styles.activeTextStyle}
-      inactiveTextStyle={styles.inactiveTextStyle}
+      activeTextStyle={styles.activeText}
+      inactiveTextStyle={styles.inactiveText}
     />
   );
 };
