@@ -39,7 +39,7 @@
   "homepage": "https://github.com/ef-eng/react-native-swag-toggle#readme",
   "devDependencies": {
     "@commitlint/config-conventional": "^8.3.4",
-    "@react-native-community/bob": "^0.14.2",
+    "@react-native-community/bob": "^0.17.1",
     "@react-native-community/eslint-config": "^2.0.0",
     "@release-it/conventional-changelog": "^1.1.4",
     "@types/jest": "^25.2.1",
